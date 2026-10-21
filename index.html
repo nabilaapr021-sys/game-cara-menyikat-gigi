@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Sikat Gigi Hero - Game Edukasi & Pengingat Sikat Gigi PWA</title>
+    <meta name="description" content="Game edukasi sikat gigi interaktif 2 menit, pengingat harian 2x sehari offline, pelacak streak, suara lucu, dan reward stiker ramah anak." />
+    <meta property="og:title" content="Sikat Gigi Hero - Game Edukasi & Pengingat Sikat Gigi PWA" />
+    <meta property="og:description" content="Game edukasi sikat gigi interaktif 2 menit, pengingat harian 2x sehari offline, pelacak streak, suara lucu, dan reward stiker ramah anak." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#38bdf8" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="SikatGigi" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+  <body class="bg-sky-50 text-slate-800 antialiased select-none overflow-x-hidden font-sans">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Service worker registration fallback
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then((reg) => console.log('Service Worker registered with scope:', reg.scope))
+            .catch((err) => console.log('SW registration fallback notice:', err));
+        });
+      }
+    </script>
+  </body>
+</html>

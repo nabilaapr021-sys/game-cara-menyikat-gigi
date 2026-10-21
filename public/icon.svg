@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="toothGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="90%" stop-color="#f0f9ff" />
+      <stop offset="100%" stop-color="#e0f2fe" />
+    </linearGradient>
+    <linearGradient id="brushHandle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <linearGradient id="pasteGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0369a1" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background with Safe Margin (Maskable & Standard) -->
+  <rect width="512" height="512" rx="108" fill="url(#bgGrad)" />
+
+  <!-- Sparkle Glow background circles -->
+  <circle cx="120" cy="110" r="40" fill="#ffffff" opacity="0.15" />
+  <circle cx="410" cy="380" r="60" fill="#ffffff" opacity="0.12" />
+  <circle cx="390" cy="110" r="28" fill="#ffffff" opacity="0.2" />
+
+  <!-- Tooth Hero Character Body -->
+  <g filter="url(#softShadow)">
+    <path d="M160 170 
+             C 160 110, 210 90, 256 110 
+             C 302 90, 352 110, 352 170 
+             C 356 225, 368 280, 340 375 
+             C 324 430, 290 430, 276 360 
+             C 268 320, 244 320, 236 360 
+             C 222 430, 188 430, 172 375 
+             C 144 280, 156 225, 160 170 Z" 
+          fill="url(#toothGrad)" 
+          stroke="#bae6fd" 
+          stroke-width="6" />
+
+    <!-- Big Happy Eyes -->
+    <ellipse cx="218" cy="225" rx="13" ry="17" fill="#0f172a" />
+    <circle cx="214" cy="218" r="5" fill="#ffffff" />
+    <circle cx="222" cy="228" r="2.5" fill="#ffffff" />
+
+    <ellipse cx="294" cy="225" rx="13" ry="17" fill="#0f172a" />
+    <circle cx="290" cy="218" r="5" fill="#ffffff" />
+    <circle cx="298" cy="228" r="2.5" fill="#ffffff" />
+
+    <!-- Rosy Cheeks -->
+    <ellipse cx="188" cy="245" rx="15" ry="9" fill="#fda4af" opacity="0.8" />
+    <ellipse cx="324" cy="245" rx="15" ry="9" fill="#fda4af" opacity="0.8" />
+
+    <!-- Cute Smiling Mouth with Tongue -->
+    <path d="M 226 250 Q 256 285 286 250" fill="none" stroke="#0f172a" stroke-width="6" stroke-linecap="round" />
+    <path d="M 238 258 C 244 274, 268 274, 274 258 Z" fill="#fb7185" />
+
+    <!-- Head Sparkle Star (Tooth Hero Crown) -->
+    <polygon points="256,60 263,78 282,85 263,92 256,110 249,92 230,85 249,78" fill="#facc15" />
+    <circle cx="256" cy="85" r="4" fill="#ffffff" />
+  </g>
+
+  <!-- Giant Toothbrush diagonally across -->
+  <g transform="rotate(-30 260 260)">
+    <!-- Brush Handle -->
+    <rect x="238" y="340" width="28" height="180" rx="14" fill="url(#brushHandle)" stroke="#be123c" stroke-width="3" />
+    <rect x="246" y="380" width="12" height="100" rx="6" fill="#fb7185" opacity="0.5" />
+    
+    <!-- Neck -->
+    <path d="M242 340 L242 300 Q242 285 248 270 L256 270 Q262 285 262 300 L262 340 Z" fill="#f43f5e" />
+
+    <!-- Brush Head Backing -->
+    <rect x="232" y="200" width="40" height="75" rx="12" fill="#e11d48" />
+
+    <!-- White Bristles -->
+    <rect x="272" y="205" width="22" height="65" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2" />
+    <!-- Bristle Separator lines -->
+    <line x1="272" y1="225" x2="294" y2="225" stroke="#cbd5e1" stroke-width="2" />
+    <line x1="272" y1="245" x2="294" y2="245" stroke="#cbd5e1" stroke-width="2" />
+
+    <!-- Minty Toothpaste Swirl with foam -->
+    <path d="M280 200 C300 185, 320 205, 290 220 C275 228, 290 250, 280 265" 
+          fill="none" stroke="url(#pasteGrad)" stroke-width="12" stroke-linecap="round" />
+  </g>
+
+  <!-- Fun Bubbles / Foam & Sparkles -->
+  <g fill="#ffffff">
+    <!-- Star Sparkle 1 -->
+    <polygon points="130,190 135,203 148,208 135,213 130,226 125,213 112,208 125,203" fill="#fef08a" />
+    <!-- Star Sparkle 2 -->
+    <polygon points="380,210 384,220 395,224 384,228 380,238 376,228 365,224 376,220" fill="#fef08a" />
+    
+    <!-- Foam Bubbles -->
+    <circle cx="160" cy="300" r="14" fill="#ffffff" opacity="0.8" />
+    <circle cx="156" cy="296" r="4" fill="#ffffff" />
+    <circle cx="360" cy="310" r="18" fill="#ffffff" opacity="0.85" />
+    <circle cx="355" cy="305" r="5" fill="#ffffff" />
+    <circle cx="378" cy="285" r="10" fill="#ffffff" opacity="0.75" />
+  </g>
+</svg>

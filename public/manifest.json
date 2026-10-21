@@ -1,0 +1,39 @@
+{
+  "id": "/",
+  "name": "Sikat Gigi Hero - Game Edukasi & Pengingat Sikat Gigi",
+  "short_name": "SikatGigi",
+  "description": "Game edukasi sikat gigi interaktif 2 menit, pengingat harian 2x sehari offline, pelacak streak, suara lucu, dan reward stiker ramah anak.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f0f9ff",
+  "theme_color": "#38bdf8",
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["games", "education", "health", "lifestyle"]
+}

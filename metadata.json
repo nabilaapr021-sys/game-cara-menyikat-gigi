@@ -1,0 +1,6 @@
+{
+  "name": "Sikat Gigi Hero - Game Edukasi & Pengingat Sikat Gigi PWA",
+  "description": "Game edukasi sikat gigi interaktif 2 menit, pengingat harian 2x sehari offline, pelacak streak, suara lucu, dan reward stiker ramah anak.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
